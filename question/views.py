@@ -13,7 +13,7 @@ from django.urls import reverse
 import re
 from django.contrib import messages
 from people.models import Member as User
-
+###
 # Create your views here.
 
 def index(request):
