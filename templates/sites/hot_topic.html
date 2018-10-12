@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table>
+  <tr>
+    <th>序号</th><th>关键词</th><th>热度</th> 
+  </tr>
+  {% for data in topic_list %}
+  <tr>
+  	<th>{{ data.num }}</th><td><a href="{{ data.topic_address }}" target="_blank">{{ data.topic }}</a></td><td>{{ data.topic_hot }}</td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}
